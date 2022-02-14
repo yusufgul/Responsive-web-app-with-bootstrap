@@ -36,7 +36,7 @@
 .nav-link:hover{
     color: black;
 }
-.btn0{
+/* .btn0{
     height: 40px;
     width: 40%;
     outline: none;
@@ -45,8 +45,7 @@
     color: white;
     border-radius: 60px;
     font-weight: 700;
-}
-
+} */
 .main{
     background: url(./images/1.jpg)no-repeat;
     background-size: cover;
@@ -60,9 +59,20 @@
     backdrop-filter: blur(10px);
     border: 5px solid #404040;
 }
+@media (max-width: 992px) {
+    #variable::after{
+        content: "Discover The Healthy Food!";
+    }
+}
+@media (min-width: 991px) {
+    #variable::after{
+        content: "Nature Is Your Ally,\A Discover The Healthy Food!";
+        white-space:pre;
+    }
+}
 .btn1{
     height: 45px;
-    width: 25%;
+    width: 35%;
     border: none;
     outline: none;
     background-color: rgb(255, 0, 127);
@@ -74,12 +84,24 @@
     background-color: rgb(204, 0, 102);
     transition: 0.5s;
 }
-.img-fluid{
-    max-width: 25%;
-    height: auto;
+@media (min-width: 992px) {
+    .img-fluid{
+        max-width: 35%;
+        height: auto;
+    }
+}
+@media (max-width: 991px) {
+    .img-fluid{
+        max-width: 50%;
+        height: auto;
+    }
 }
 .img-fluid-2{
     max-width: 100%;
+    height: auto;
+}
+.img-fluid-3{
+    max-width: 30%;
     height: auto;
 }
 .container1{
@@ -107,15 +129,23 @@ h1{
     background-size: cover;
     height: 80vh;
     width: 100%;
+    background-position-x: right;
 }
 .orange h1{
     font-family: 'IBM Plex Mono', monospace;
 }
+.orange h1{
+    backdrop-filter: blur(10px);
+}
+.orange h6{
+    backdrop-filter: blur(10px);
+}
 .container2{
     margin-top: 125px;
-    margin-left: 125px;
+    margin-left: 100px;
     margin-right: 50px;
     padding-left: 0px;
+    padding-right: 0px;
 }
 .news{
     background-color: black;
