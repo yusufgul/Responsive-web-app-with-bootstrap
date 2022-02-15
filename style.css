@@ -36,16 +36,6 @@
 .nav-link:hover{
     color: black;
 }
-/* .btn0{
-    height: 40px;
-    width: 40%;
-    outline: none;
-    border: none;
-    background: rgb(255, 0, 127);
-    color: white;
-    border-radius: 60px;
-    font-weight: 700;
-} */
 .main{
     background: url(./images/1.jpg)no-repeat;
     background-size: cover;
